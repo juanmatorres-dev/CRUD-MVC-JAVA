@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\WorkSpaces\Como Hacer un CRUD en JAVA - MVC con MYSQL\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2198520971.index
+379066823.index
+1437009324.index
+1671881285.index
+840902357.index
+308740261.index
+3415205237.index

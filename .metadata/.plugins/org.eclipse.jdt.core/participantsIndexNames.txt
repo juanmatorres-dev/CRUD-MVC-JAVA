@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\WorkSpaces\Como Hacer un CRUD en JAVA - MVC con MYSQL\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\379066823.index
+\CRUD-MVC-JAVA\src\main\java
+C:\WorkSpaces\Como Hacer un CRUD en JAVA - MVC con MYSQL\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\874832603.index
+\CRUD-MVC-JAVA\src\main\java
