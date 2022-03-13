@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Modelo.Persona;
+import ModeloDAO.PersonaDAO;
+
 /**
  * Servlet implementation class Controlador
  */
@@ -19,6 +22,8 @@ public class Controlador extends HttpServlet {
 	String listar = "vistas/listar.jsp";
 	String add = "vistas/add.jsp";
 	String edit = "vistas/edit.jsp";
+	Persona per = new Persona();
+	PersonaDAO dao = new PersonaDAO();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -39,7 +44,19 @@ public class Controlador extends HttpServlet {
 		
 		if(action.equalsIgnoreCase("listar")) {
 			acceso = listar;
+		}else if(action.equalsIgnoreCase("add")) {
+			acceso = add;
+		}else if(action.equalsIgnoreCase("Agregar")) {
+			
+			String dni = request.getParameter("txtDNI");
+			String nom = request.getParameter("txtNom");
+			
+			per.setDni(dni);
+			per.setNom(nom);
+			dao.add(per);
+			acceso = listar;
 		}
+		
 		
 		RequestDispatcher vista = request.getRequestDispatcher(acceso);
 		vista.forward(request, response);

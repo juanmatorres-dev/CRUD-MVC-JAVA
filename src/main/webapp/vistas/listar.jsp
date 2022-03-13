@@ -12,7 +12,11 @@
 </head>
 <body>
 	<h1>Personas</h1>
-
+	
+	<p>
+		<a href="Controlador?action=add">Nuevo ➕</a>
+	</p>
+	
 	<table border="1">
 	  <thead>
 	  	<tr>

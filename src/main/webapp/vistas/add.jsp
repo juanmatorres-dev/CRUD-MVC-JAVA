@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Añadir personas</title>
 </head>
 <body>
-
+	<h1>Agregar personas</h1>
+	<form action="Controlador">
+		DNI: <br>
+		<input type="text" name="txtDNI"> <br>
+		Nombres:  <br>
+		<input type="text" name="txtNom"> <br>
+		<input type="submit" name="action" value="Agregar"> <br>
+	</form>
 </body>
 </html>

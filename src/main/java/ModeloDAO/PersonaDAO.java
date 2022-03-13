@@ -6,6 +6,7 @@ package ModeloDAO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,7 +60,17 @@ public class PersonaDAO implements CRUD {
 
 	@Override
 	public boolean add(Persona per) {
-		// TODO Auto-generated method stub
+		
+		String sql = "INSERT INTO persona (DNI, Nombres) VALUES ('" + per.getDni() + "','" + per.getNom() + "');";
+		
+		try {
+			con = cn.getConnection();
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			System.out.println("[Error] : " + e);
+		}
+		
 		return false;
 	}
 
