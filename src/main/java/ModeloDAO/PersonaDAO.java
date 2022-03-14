@@ -126,7 +126,17 @@ public class PersonaDAO implements CRUD {
 	 * Elimina una persona dado un id
 	 */
 	public boolean eliminar(int id) {
-		// TODO Auto-generated method stub
+		
+		String sql = "DELETE FROM persona WHERE id=" + id + ";";
+		
+		try {
+			con = cn.getConnection();
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("[Error] : " + e);
+		}
+		
 		return false;
 	}
 

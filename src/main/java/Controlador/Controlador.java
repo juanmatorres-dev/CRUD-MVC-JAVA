@@ -69,6 +69,11 @@ public class Controlador extends HttpServlet {
 			per.setNom(nom);
 			dao.edit(per);
 			acceso = listar;
+		}else if(action.equalsIgnoreCase("delete")) {
+			int id = Integer.parseInt(request.getParameter("id"));
+			per.setId(id);
+			dao.eliminar(id);
+			acceso = listar;
 		}
 		
 		
