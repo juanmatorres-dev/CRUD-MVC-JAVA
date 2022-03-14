@@ -14,6 +14,7 @@
 		Nombres:  <br>
 		<input type="text" name="txtNom"> <br>
 		<input type="submit" name="action" value="Agregar"> <br>
+		<a href="Controlador?action=listar">⬅ Volver</a>
 	</form>
 </body>
 </html>
