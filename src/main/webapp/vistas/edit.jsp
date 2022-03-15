@@ -25,10 +25,15 @@
 		int id = Integer.parseInt((String)request.getAttribute("idper"));
 		Persona p = (Persona)dao.list(id);
 		
+		/*
+			Warning !! : En la versión desplegada, puede que no tengas consola, por lo que podría dar error
+		*/
+		/*
 		System.out.println("[DNI]: " + p.getDni());
 		System.out.println("[Nombres]: " + p.getNom());
 		System.out.println("[ID]: " + p.getId());
 		System.out.println("-------");
+		*/
 	%>
 	<div class="container">
 	<div class="col-lg-6">
